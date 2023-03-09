@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/styles.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/86ad5c5d31.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="theBox">
+      <form id="search-bar">
+        <input type="search" placeholder="Search for city" id="city-input" />
+        <input type="submit" value="Search" />
+      </form>
+      <div class="left">
+        <h2>Search for a city</h2>
+        <h6>Date/Time</h6>
+
+        <h3><span class="display"> -6</span><span id="celcius">°C</span></h3>
+      </div>
+      <div class="floatRight">
+        <ul class="info">
+          <li>Humidity <strong id="humid"></strong>%</li>
+          <li>High <strong id="high"></strong>°C</li>
+          <li>Low <strong id="low"> </strong>°C</li>
+        </ul>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
